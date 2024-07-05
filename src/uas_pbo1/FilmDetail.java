@@ -6,8 +6,8 @@ public class FilmDetail extends Film {
     }
     
     public String getJudul(){
-        String kode = getId().substring(0, 1);
-        switch(kode){
+        String id = getId().substring(0, 1);
+        switch(id){
             case "1":
                 return "Inside Out 2";
             case "2" :
@@ -22,8 +22,8 @@ public class FilmDetail extends Film {
     }
     
     public String getCinema(){
-        String kode = getId().substring(1, 3);
-        switch(kode){
+        String id = getId().substring(1, 3);
+        switch(id){
             case "01":
                 return "1";
             case "02" :
@@ -38,8 +38,8 @@ public class FilmDetail extends Film {
     }
     
     public String getPopCorn(){
-        String kode = getId().substring(3);
-        if (kode.equals("01")) {
+        String id = getId().substring(3);
+        if (id.equals("01")) {
             return "With PopCorn";
         } else {
             return "No PopCorn";
