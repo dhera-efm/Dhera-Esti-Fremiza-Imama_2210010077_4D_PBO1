@@ -14,10 +14,10 @@ public class FilmMain {
                 System.out.print("Masukkan Nama Pemesan "+(i+1)+" : ");
                 String nama = scanner.nextLine();
                 System.out.print("Masukkan ID Film "+(i+1)+" : ");
-                String kode = scanner.nextLine();
+                String id = scanner.nextLine();
 
                 //objek
-                film[i] = new FilmDetail(nama, kode);
+                film[i] = new FilmDetail(nama, id);
             }
 
             for (FilmDetail detail: film){
